@@ -10,14 +10,12 @@ import {
 } from "lucide-react";
 
 const topics = [
-  { icon: Newspaper, label: "Blog", color: "text-orange-500" },
-  { icon: Briefcase, label: "Business", color: "text-purple-500" },
-  { icon: TrendingUp, label: "Culture", color: "text-red-500" },
-  { icon: Palmtree, label: "Travel", color: "text-amber-500" },
-  { icon: Radio, label: "News", color: "text-orange-500" },
-  { icon: Laptop, label: "Technology", color: "text-blue-500" },
-  { icon: Users, label: "Management", color: "text-pink-500" },
-  { icon: Rocket, label: "Startups", color: "text-purple-500" },
+  { icon: Newspaper, label: "News", color: "text-orange-500" },
+  { icon: Briefcase, label: "Roster", color: "text-purple-500" },
+  { icon: TrendingUp, label: "Depth Chart", color: "text-red-500" },
+  { icon: Palmtree, label: "Future Draft Picks", color: "text-amber-500" },
+  { icon: Laptop, label: "Schedule", color: "text-blue-500" },
+  { icon: Users, label: "Pick'em", color: "text-pink-500" },
 ];
 
 export const TrendingTopics = () => {

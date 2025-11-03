@@ -4,12 +4,10 @@ export const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Heartfelt <span className="text-gradient">Reflections</span>: Stories of
-            Love, Loss, and Growth
+            Welcome to <span className="text-gradient">Sixer sHoops</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Nason welcomes to ultimate source for fresh perspectives! Explore curated
-            content to enlighten, entertain and engage global readers.
+            Your ultimate source for Philadelphia 76ers analysis, player grades, and team insights!
           </p>
         </div>
       </div>
