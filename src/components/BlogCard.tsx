@@ -23,11 +23,9 @@ export const BlogCard = ({
 }: BlogCardProps) => {
   return (
     <article
-      className={`group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 ${
-        featured ? "md:col-span-2 md:row-span-2" : ""
-      }`}
+      className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
     >
-      <div className={`relative overflow-hidden ${featured ? "h-64 md:h-full" : "h-48"}`}>
+      <div className="relative overflow-hidden h-48">
         <img
           src={image}
           alt={title}
@@ -55,7 +53,7 @@ export const BlogCard = ({
         </h3>
         <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{excerpt}</p>
         <Button variant="default" className="bg-accent hover:bg-accent/90">
-          Discover More
+          READ MORE
         </Button>
       </div>
     </article>

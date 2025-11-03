@@ -4,7 +4,7 @@ export const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Welcome to <span className="text-gradient">Sixer sHoops</span>
+            Welcome to <span className="text-primary">Sixers Hoops</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Your ultimate source for Philadelphia 76ers analysis, player grades, and team insights!

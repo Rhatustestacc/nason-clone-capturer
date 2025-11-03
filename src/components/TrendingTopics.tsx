@@ -3,10 +3,10 @@ import {
   Briefcase, 
   Palmtree, 
   Laptop, 
-  Radio,
   TrendingUp,
   Users,
-  Rocket
+  DollarSign,
+  Mail
 } from "lucide-react";
 
 const topics = [
@@ -16,6 +16,8 @@ const topics = [
   { icon: Palmtree, label: "Future Draft Picks", color: "text-amber-500" },
   { icon: Laptop, label: "Schedule", color: "text-blue-500" },
   { icon: Users, label: "Pick'em", color: "text-pink-500" },
+  { icon: DollarSign, label: "Salary Breakdown", color: "text-green-500" },
+  { icon: Mail, label: "Contact", color: "text-cyan-500" },
 ];
 
 export const TrendingTopics = () => {
