@@ -23,9 +23,9 @@ export const BlogCard = ({
 }: BlogCardProps) => {
   return (
     <article
-      className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
+      className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 flex flex-row"
     >
-      <div className="relative overflow-hidden h-48">
+      <div className="relative overflow-hidden w-2/5 flex-shrink-0">
         <img
           src={image}
           alt={title}
@@ -39,20 +39,22 @@ export const BlogCard = ({
           ))}
         </div>
       </div>
-      <div className="p-6">
-        <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
-          <span className="font-medium text-foreground">{author}</span>
-          <span>•</span>
-          <div className="flex items-center gap-1">
-            <Calendar className="w-3 h-3" />
-            <span>{date}</span>
+      <div className="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
+            <span className="font-medium text-foreground">{author}</span>
+            <span>•</span>
+            <div className="flex items-center gap-1">
+              <Calendar className="w-3 h-3" />
+              <span>{date}</span>
+            </div>
           </div>
+          <h3 className="text-xl font-bold mb-3 line-clamp-2 group-hover:text-accent transition-colors">
+            {title}
+          </h3>
+          <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{excerpt}</p>
         </div>
-        <h3 className="text-xl font-bold mb-3 line-clamp-2 group-hover:text-accent transition-colors">
-          {title}
-        </h3>
-        <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{excerpt}</p>
-        <Button variant="default" className="bg-accent hover:bg-accent/90">
+        <Button variant="default" className="bg-accent hover:bg-accent/90 w-fit">
           READ MORE
         </Button>
       </div>
